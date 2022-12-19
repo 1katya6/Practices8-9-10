@@ -1,0 +1,30 @@
+﻿<Window x:Class="Pr_9.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pr_9"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox x:Name="myTextBox" VerticalAlignment="Stretch" TextWrapping="Wrap" Grid.ColumnSpan="2" Grid.RowSpan="4"/>
+            <Button x:Name="OpenButton" Click="OpenButton_OnClick" Content="Открыть файл" Grid.Row="5" Grid.Column="1"></Button>
+            <Button x:Name="SaveButton" Click="SaveButton_OnClick" Content="Сохранить файл" Grid.Row="5" Grid.Column="0"></Button>
+        </Grid>
+    </Grid>
+</Window>
